@@ -38,8 +38,7 @@
 						<input type="submit" value="등록"/>
 					</td>
 				</tr>
-			</table>
-		
+			</table>		
 		</form>
 		
 	</body>
