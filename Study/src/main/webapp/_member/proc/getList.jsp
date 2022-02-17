@@ -6,7 +6,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="application/json;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	// 데이터베이스 작업(Statement 사용)
 	String host = "jdbc:mysql://chhak.or.kr:3306/tempest1389";
@@ -46,6 +46,5 @@
 	Gson gson = new Gson();
 	
 	String jsonData = gson.toJson(members);
-	out.print(jsonData);	
-	
+	out.print(jsonData);		
 %>
