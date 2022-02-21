@@ -14,6 +14,33 @@ public class ArticleBean {
 	private String regip;
 	private String rdate;
 	
+	// 추가 필드
+	private String fname;
+	private FileBean fb;
+	
+	public FileBean getFb() {
+		return fb;
+	}	
+	public void setFb(FileBean fb) {
+		this.fb = fb;
+	}
+	
+	public String getFname() {
+		return fname;
+	}
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	
+	private String nick;
+	
+	public String getNick() {
+		return nick;
+	}
+	public void setNick(String nick) {
+		this.nick = nick;
+	}	
+	
 	public int getId() {
 		return id;
 	}
@@ -26,6 +53,10 @@ public class ArticleBean {
 	public void setParent(int parent) {
 		this.parent = parent;
 	}
+	public void setParent(String parent) {
+		this.parent = Integer.parseInt(parent);
+	}
+	
 	public int getComment() {
 		return comment;
 	}
